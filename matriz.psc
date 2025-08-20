@@ -1,24 +1,27 @@
-Algoritmo matriz
+Algoritmo Matrix
 	
-	Definir vector, LONG, max Como Entero
-	LONG = 5
-	Dimension vector[LONG]
+	Definir matriz, FILA, COLUMNA, max Como Entero
+	//LONG = 5
+	FILA = 4
+	COLUMNA = 3
+	Dimension matriz[FILA, COLUMNA]
 	
-	Para i=0 Hasta LONG-1 Con Paso 1 Hacer
-		vector[i] = Aleatorio(10, 17)
+	// Cargando la matriz:
+	Para i=0 Hasta FILA-1 Con Paso 1 Hacer
+		Para j=0 Hasta COLUMNA-1 Con Paso 1 Hacer
+			matriz[i,j] = Aleatorio(10, 30)
+		Fin Para
 	Fin Para
 	
-	Para i=0 Hasta LONG-1 Con Paso 1 Hacer
-		Escribir Sin Saltar  vector[i] " "
-	Fin Para
-	max = vector[0]
-	Para i=1 Hasta LONG-1 Con Paso 1 Hacer
-		Si vector[i] > max Entonces
-			max = vector[i]
-		Fin Si
+	// Leer la matriz:
+	Para i=0 Hasta FILA-1 Con Paso 1 Hacer
+		Para j=0 Hasta COLUMNA-1 Con Paso 1 Hacer
+			Escribir Sin Saltar matriz[i,j] " "
+		Fin Para
+		Escribir ""
 	Fin Para
 	
 	Escribir ""
-	Escribir "Máximo: " max
+	//Escribir "Máximo: " max
 	
 FinAlgoritmo
