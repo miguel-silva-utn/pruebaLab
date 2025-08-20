@@ -1,4 +1,4 @@
-Algoritmo sin_titulo
+Algoritmo Calculadora
 	
 	Saludador(PedirNombre())
 	
